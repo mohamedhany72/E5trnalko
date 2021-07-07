@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أخترنالكو</title>
+    <link rel="icon" href="./images/title-logo.png" type="image/x-icon">
+    <!--loader css file-->
+    <link rel="stylesheet" href="./styles/loader.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <!--fontawsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--main style sheet-->
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body class="non-over-flow">
+    <div id="loader-background">
+        <div class="loader">Loading...</div>
+    </div>
+
+    <div id="navbars">
+
+        <!--
+            //for adding a sub menu at any level in screens of width less than 992px;
+            //just replace 'change text here' with the names that you want
+            //text sub-menu-label > span is the title and will automatically updated in the ul
+            //you can nest here as much as you wish 
+
+            <li class="nav-item sub-menu">
+                <a href="#" class="nav-link sub-menu-label"> <span> change text here  </span> <i class="fas fa-chevron-left"></i></a>
+                <ul>
+                    <li class="back"><span></span><i class="fas fa-arrow-right"></i></li>
+                    <li class="label"></li>
+                    <li><a href="#" class="nav-link"> change text here </a></li>
+                    <li><a href="#" class="nav-link"> change text here </a></li>
+                    <li><a href="#" class="nav-link"> change text here </a></li>
+                </ul>
+            </li>
+        -->
+        
+        <div id="small-screen-nav">
+                <a href="#" class="brand"><span>أخترنالكو</span></a>
+                <nav class="nav-2">
+                    <div class="containerer">
+                        <a href="#" class="brand"><span>أخترنالكو</span></a>
+
+                        <ul class="first-ul">
+                            <li class="nav-item">
+                                <a href="./index.html" class="nav-link">الصفحة الرئيسية</a>
+                            </li>
+
+                            <!-- there's sub menu here -->
+                            <li class="nav-item sub-menu">
+                                <a href="#" class="nav-link sub-menu-label"> <span>متعدد 1</span> <i class="fas fa-chevron-left"></i></a>
+                                <ul>
+                                    <li class="back"><span></span><i class="fas fa-arrow-right"></i></li>
+                                    <li class="label"></li>
+                                    <li><a href="#" class="nav-link"> مستوى ثانى فردى </a></li>
+                                    <li><a href="#" class="nav-link"> مستوى ثانى فردى </a></li>
+                                    <li><a href="#" class="nav-link"> مستوى ثانى فردى </a></li>
+                                </ul>
+                            </li>
+
+                            <!-- there's sub menu here -->
+                            <li class="nav-item sub-menu">
+                                <a href="#" class="nav-link sub-menu-label"> <span>متعدد 2</span> <i class="fas fa-chevron-left"></i></a>
+                                <ul>
+                                    <li class="back"><span></span><i class="fas fa-arrow-right"></i></li>
+                                    <li class="label"></li>
+
+                                    <li><a href="#" class="nav-link">فردى</a></li>
+                                    <!-- there's sub menu here -->
+                                    <li class="nav-item sub-menu">
+                                        <a href="#" class="nav-link sub-menu-label"> <span>متعدد 3</span> <i class="fas fa-chevron-left"></i></a>
+                                        <ul>
+                                            <li class="back"><span></span><i class="fas fa-arrow-right"></i></li>
+                                            <li class="label"></li>
+                                            <li><a href="#" class="nav-link"> مستوى ثالث فردى </a></li>
+                                            <li><a href="#" class="nav-link"> مستوى ثالث فردى </a></li>
+                                            <li><a href="#" class="nav-link"> مستوى ثالث فردى </a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="nav-link">فردى</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="./templates/seller-profile.html" class="nav-link ">صفحة البائع</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="./templates/search-results.html" class="nav-link ">نتائج البحث</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="./templates/product-page.html" class="nav-link ">صفحة المنتج</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="./templates/order-number-request.html" class="nav-link ">الاستعلام عن الطلب</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="./templates/order-number-show.html" class="nav-link ">نتيجة الاستعلام عن الطلب</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="./templates/category-page.html" class="nav-link ">فئة المنتجات</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="./templates/contact-us.html" class="nav-link ">اتصل بنا</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="./templates/about-us.html" class="nav-link ">من نحن</a>
+                            </li>
+                        </ul>  
+                    </div>
+                </nav>
+                <!--search form-->
+                <div class="for-styling"></div>
+                <form method="GET" class="nav-search-form">
+                    <label for="search" class="sr-only sr-only-focusable">search input</label>
+                    <input type="text" placeholder="ما الذى تريد البحث عنه؟" name="search" id="search">
+                    <button type="submit"><i class="fa fa-search"></i> <span class="sr-only sr-only-focusable">اضغط للبحث</span> </button>
+                </form>
+
+                <span class="open-nav-btn"><i class="fa fa-search"></i></span>
+                <!--hamburger menu-->
+                <div class="menu-btn"  role="button">
+                    <div class="menu-btn_burger"></div>
+                </div>
+        </div>
+        <div class="page-overlay"></div>
+        <!--
+            //for adding a first level sub menu in screens of width more than or equall 992px;
+            //just replace 'change text here and all will be fine'
+
+            <li class="nav-item nav-item-first first-sub">
+                <a href="#" class="nav-link first-sub-label"><span> change text here </span><i class="fas fa-chevron-down"></i></a>
+                <ul class="first-sub-ul">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link "> change text here </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link "> change text here </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link "> change text here </a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+            //for adding a second level sub menu in screens of width more than or equall 992px;
+            //just replace the arabic text
+            //you can't add another level of menus after this level
+            //load-more link is here for extra information in another page
+
+            <li class="nav-item second-sub">
+                <a href="#" class="nav-link second-sub-label"><span>قائمة منسدلة</span><i class="fas fa-chevron-right"></i></a>
+                
+                <ul class="second-ul">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">فردى</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">فردى</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">فردى</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">فردى</a>
+                    </li>
+                    <li class="load-more">
+                        <a href="#" class="load-more-a">اعرض المزيد</a>
+                    </li>
+                </ul>
+            </li>
+        -->
+
+        <!--large screen nav bar-->
+        <!-- <nav id="large-screen-nav">
+            <div class="container">
+                <a href="#" class="brand"><span>أخترنالكو</span></a>
+
+                <ul class="first-ul">
+                    <li class="nav-item nav-item-first">
+                        <a href="#" class="nav-link ">فردى</a>
+                    </li>
+                    <li class="nav-item nav-item-first first-sub">
+                        <a href="#" class="nav-link first-sub-label"><span>فردى</span><i class="fas fa-chevron-down"></i></a>
+                        <ul class="first-sub-ul">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ">فردى</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ">فردى</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ">فردى</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-item-first">
+                        <a href="#" class="nav-link ">فردى</a>
+                    </li>
+                    <li class="nav-item nav-item-first">
+                        <a href="#" class="nav-link ">فردى</a>
+                    </li>
+                    <li class="nav-item nav-item-first first-sub">
+                        <a href="#" class="nav-link first-sub-label"><span>فردى</span><i class="fas fa-chevron-down"></i></a>
+                        <ul class="first-sub-ul">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ">فردى</a>
+                            </li>
+                            <li class="nav-item second-sub">
+                                <a href="#" class="nav-link second-sub-label"><span>قائمة منسدلة</span><i class="fas fa-chevron-right"></i></a>
+                                
+                                <ul class="second-ul">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link ">فردى</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link ">فردى</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link ">فردى</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link ">فردى</a>
+                                    </li>
+                                    <li class="load-more">
+                                        <a href="#" class="load-more-a">اعرض المزيد</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ">فردى</a>
+                            </li>
+                            <li class="nav-item second-sub">
+                                <a href="#" class="nav-link second-sub-label"><span>قائمة منسدلة</span><i class="fas fa-chevron-right"></i></a>
+                                
+                                <ul class="second-ul">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link ">فردى</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link ">فردى</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link ">فردى</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link ">فردى</a>
+                                    </li>
+                                    <li class="load-more">
+                                        <a href="#" class="load-more-a">اعرض المزيد</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>  
+            </div>
+        </nav> -->
+    </div>
+
+    
+
+
+
+
+
+    <header id="home-header">
+        <!-- Swiper -->
+        <div class="swiper-container swiper-1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide brand-slide">
+                    <div class="slide-text">
+                        <div class="header-img">
+                            <img src="./images/footer-logo.png" alt="logo" class="header-logo">
+                        </div>
+                        <h1>اختارنالكو</h1>
+                        <!-- <p>
+                         اكتب هنا اى شئ،  اكتب هنا اى شئ، اكتب هنا اى شئ، اكتب هنا اى شئ، 
+                        </p> -->
+                    </div>
+                    <img src="./images/header-1.jpg" alt="image 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/header-2.jpg" alt="image 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/header-3.jpg" alt="image 3">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- <div class="scroll-for-products-contaier">
+            <button class="scroll-for-products">
+                اضغط هنا لعرض المنتجات
+            </button>
+        </div> -->
+    </header>
+
+    <main id="products">
+        <h2>أحدث المنتجات</h2>
+        <div class="container-lg">
+            <div class="row flex-row-reverse">
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    المزيد من التفاصيل
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="row flex-row-reverse products-row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="./images/img1.png" alt="img">
+                            <div class="img-over-lay">
+                                <a href="#" class="neon-btn open-gallery">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                المزيد من التفاصيل
+                            </a>
+                            </div>
+                        </div>
+                        <div class="product-data">
+                            <div class="price">123 EGP</div>
+                            <div class="product-name">
+                                <a href="#"><h3>اسم المنتج</h3></a>
+                                <p>وصف المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="row">
+                <div class="load-more">
+                    <button class="load-more-a">اعرض المزيد</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#" class="brand">
+                        <img src="./images/footer-logo.png" alt="logo png">
+                        <h2>اختارنالكو</h2>
+                    </a>
+                    <div class="social-media-buttons">
+                        <a href="#" target="blank"><i class="fab fa-whatsapp"></i><span class="sr-only sr-only-focusable">what's app</span></a>
+                        <a href="#" target="blanck"><i class="fab fa-twitter"></i><span class="sr-only sr-only-focusable">twitter</span></a>
+                        <a href="#" target="blanck"><i class="fab fa-facebook-f"></i><span class="sr-only sr-only-focusable">facebook</span></a>
+                        <a href="#" target="blanck"><i class="fab fa-instagram"></i><span class="sr-only sr-only-focusable">instagram</span></a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-list-title"><h3>عنوان</h3></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-list-title"><h3>عنوان</h3></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-list-title"><h3>عنوان</h3></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-list-title"><h3>عنوان</h3></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row copy-right">
+               <p> جميع الحقوق محفوظة الى  &copy; اختارنالكو</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed-msg">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-msg">
+            <i class="fas fa-envelope"></i><span class="sr-only sr-only-focusable">ارسل لنا رسالة</span>
+        </button>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal-msg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">لديك اى استفسار؟</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" id="quick-msg-form">
+                        <div class="form-row">
+                            <label for="client-name-msg">الاسم</label>
+                            <input type="text" name="name" id="client-name-msg" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="client-number-msg">الرقم</label>
+                            <input type="text" name="number" id="client-number-msg" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="client-message-msg">الرسالة</label>
+                            <textarea cols="20" rows="6" name="message-form-text-area" id="client-message-msg" class="quick-msg-text-area" required></textarea>
+                        </div>
+
+                        <input type="submit" value="Submit" class="hide-me">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
+                    <button type="button" class="btn btn-primary" id="quick-msg-form-submit-form">إرسال</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--scripts-->
+    <!--jquery-->
+    <script src="./scripts/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!--bootstrap-->
+    <script src="./scripts/bootstrap.min.js"></script>
+    <!--swiper-->
+    <script src="./scripts/swiper-bundle.min.js"></script>
+    <!--main script file-->
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أخترنالكو</title>
+    <link rel="icon" href="../images/title-logo.png" type="image/x-icon">
+    <!--loader css file-->
+    <link rel="stylesheet" href="../styles/loader.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="../styles/swiper-bundle.min.css">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <!--fontawsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--main style sheet-->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!--templates style sheet-->
+    <link rel="stylesheet" href="../styles/templates.css">
+</head>
+<body class="non-over-flow">
+    <div id="loader-background">
+        <div class="loader">Loading...</div>
+    </div>
+
+    <div id="navbars">
+        <div id="small-screen-nav">
+            <a href="#" class="brand"><span>أخترنالكو</span></a>
+            <nav class="nav-2">
+                <div class="containerer">
+                    <a href="#" class="brand"><span>أخترنالكو</span></a>
+
+                    <ul class="first-ul">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">الصفحة الرئيسية</a>
+                        </li>
+
+                        <!-- there's sub menu here -->
+                        <li class="nav-item sub-menu">
+                            <a href="#" class="nav-link sub-menu-label"> <span>متعدد 1</span> <i class="fas fa-chevron-left"></i></a>
+                            <ul>
+                                <li class="back"><span></span><i class="fas fa-arrow-right"></i></li>
+                                <li class="label"></li>
+                                <li><a href="#" class="nav-link"> مستوى ثانى فردى </a></li>
+                                <li><a href="#" class="nav-link"> مستوى ثانى فردى </a></li>
+                                <li><a href="#" class="nav-link"> مستوى ثانى فردى </a></li>
+                            </ul>
+                        </li>
+
+                        <!-- there's sub menu here -->
+                        <li class="nav-item sub-menu">
+                            <a href="#" class="nav-link sub-menu-label"> <span>متعدد 2</span> <i class="fas fa-chevron-left"></i></a>
+                            <ul>
+                                <li class="back"><span></span><i class="fas fa-arrow-right"></i></li>
+                                <li class="label"></li>
+
+                                <li><a href="#" class="nav-link">فردى</a></li>
+                                <!-- there's sub menu here -->
+                                <li class="nav-item sub-menu">
+                                    <a href="#" class="nav-link sub-menu-label"> <span>متعدد 3</span> <i class="fas fa-chevron-left"></i></a>
+                                    <ul>
+                                        <li class="back"><span></span><i class="fas fa-arrow-right"></i></li>
+                                        <li class="label"></li>
+                                        <li><a href="#" class="nav-link"> مستوى ثالث فردى </a></li>
+                                        <li><a href="#" class="nav-link"> مستوى ثالث فردى </a></li>
+                                        <li><a href="#" class="nav-link"> مستوى ثالث فردى </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="nav-link">فردى</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./seller-profile.html" class="nav-link ">صفحة البائع</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./search-results.html" class="nav-link ">نتائج البحث</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./product-page.html" class="nav-link ">صفحة المنتج</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./order-number-request.html" class="nav-link ">الاستعلام عن الطلب</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./order-number-show.html" class="nav-link ">نتيجة الاستعلام عن الطلب</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./category-page.html" class="nav-link ">فئة المنتجات</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./contact-us.html" class="nav-link ">اتصل بنا</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./about-us.html" class="nav-link ">من نحن</a>
+                        </li>
+                    </ul>  
+                </div>
+            </nav>
+            <!--search form-->
+            <div class="for-styling"></div>
+            <form method="GET" class="nav-search-form">
+                <label for="search" class="sr-only sr-only-focusable">search input</label>
+                <input type="text" placeholder="ما الذى تريد البحث عنه؟" name="search" id="search">
+                <button type="submit"><i class="fa fa-search"></i> <span class="sr-only sr-only-focusable">اضغط للبحث</span> </button>
+            </form>
+
+            <span class="open-nav-btn"><i class="fa fa-search"></i></span>
+            <!--hamburger menu-->
+            <div class="menu-btn"  role="button">
+                <div class="menu-btn_burger"></div>
+            </div>
+        </div>
+        <div class="page-overlay"></div>
+    </div>
+
+    <header id="templates-header">
+        <div class="header-logo">
+            <h1>اختارنالكو</h1>
+        </div>
+    </header>
+
+    <main id="category-page">
+        <h2 id="category-title">ملابس حريمى - تيشرتات</h2>
+        <div class="other-products">
+            <div class="container-lg">
+
+                <div class="row">
+                    <!-- <div class="col-12 col-md-3 filter-column">
+                        <div class="row pages-sequence" id="classification">
+                            <div class="from-that">
+                                <a href="#">ملابس</a>
+                                <i class="fas fa-arrow-left"></i>
+                            </div>
+                            <div class="from-that">
+                                <a href="#">ملابس حريمى</a>
+                                <i class="fas fa-arrow-left"></i>
+                            </div>
+                            <div class="from-that">
+                                <a href="#">تيشرتات</a>
+                                <i class="fas fa-arrow-left"></i>
+                            </div>
+                        </div>
+
+                        <div class="filter-button d-md-none">
+                            <div class="btn btn-primary">
+                                تصفية النتائج
+                            </div>
+                        </div>
+                        
+                        <div class="filter">
+                            <form id="filter-form" method="GET">
+                                <div class="form-row">
+                                    <span>
+                                        تصفية النتائج
+                                    </span>
+                                    <div class="close-times  d-md-none">
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                </div>
+                                <fieldset class="form-group">
+                                    <legend>البائعون</legend>
+                                    <div class="filter-form-row">
+                                        <label for="seller1">بائع اول</label>
+                                        <input type="checkbox" id="seller1" name="seller1" value="بائع-اول">
+                                    </div>
+                                    <div class="filter-form-row">
+                                        <label for="seller2">بائع ثانى</label>
+                                        <input type="checkbox" id="seller2" name="seller2" value="بائع-ثانى">
+                                    </div>
+                                    <div class="filter-form-row">
+                                        <label for="seller3">بائع ثالث</label>
+                                        <input type="checkbox" id="seller3" name="seller3" value="بائع-ثالث">
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="form-group price-form">
+                                    <legend>السعر</legend>
+                                    <div class="filter-form-row">
+                                        <label for="price-from">من</label>
+                                        <input type="number" id="price-from" name="price-from" value="0">
+
+                                        <label for="price-to">الى</label>
+                                        <input type="number" id="price-to" name="price-to" >
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="form-group">
+                                    <legend>الحجم</legend>
+                                    <div class="filter-form-row">
+                                        <label for="small">S</label>
+                                        <input type="checkbox" id="small" name="small" value="s">
+                                    </div>
+                                    <div class="filter-form-row">
+                                        <label for="medium">M</label>
+                                        <input type="checkbox" id="medium" name="medium" value="m">
+                                    </div>
+                                    <div class="filter-form-row">
+                                        <label for="large">L</label>
+                                        <input type="checkbox" id="large" name="large" value="l">
+                                    </div>
+                                    <div class="filter-form-row">
+                                        <label for="x-large">M</label>
+                                        <input type="checkbox" id="x-large" name="x-large" value="xl">
+                                    </div>
+                                </fieldset>
+                                <div class="form-row">
+                                    <input type="submit" value="تصفية" class="btn btn-primary">
+                                    <button class="close d-md-none">close</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div> -->
+
+                    <div class="col-12 pages-sequence" id="classification">
+                        <div class="from-that">
+                            <a href="#">ملابس</a>
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                        <div class="from-that">
+                            <a href="#">ملابس حريمى</a>
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                        <div class="from-that">
+                            <a href="#">تيشرتات</a>
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-12 col-md-9"> -->
+                    <div class="col-12">
+                        <div class="swiper-container category-search-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide first-swiper-slide">
+                                    <div class="row flex-row-reverse">
+                                        <div class="col-6 col-md-4 col-lg-3">
+                                            <div class="product-card-small">
+                                                <div class="product-img-small">
+                                                    <a href="#"><img src="../images/img5.png" alt="img"></a>                         
+                                                </div>
+                                                <div class="product-data">
+                                                    <div class="price">123 EGP</div>
+                                                    <div class="product-name">
+                                                        <a href="#"><h4>اسم المنتج</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-6 col-md-4 col-lg-3">
+                                            <div class="product-card-small">
+                                                <div class="product-img-small">
+                                                    <a href="#"><img src="../images/img5.png" alt="img"></a>                         
+                                                </div>
+                                                <div class="product-data">
+                                                    <div class="price">123 EGP</div>
+                                                    <div class="product-name">
+                                                        <a href="#"><h4>اسم المنتج</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-6 col-md-4 col-lg-3">
+                                            <div class="product-card-small">
+                                                <div class="product-img-small">
+                                                    <a href="#"><img src="../images/img5.png" alt="img"></a>                         
+                                                </div>
+                                                <div class="product-data">
+                                                    <div class="price">123 EGP</div>
+                                                    <div class="product-name">
+                                                        <a href="#"><h4>اسم المنتج</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-6 col-md-4 col-lg-3">
+                                            <div class="product-card-small">
+                                                <div class="product-img-small">
+                                                    <a href="#"><img src="../images/img5.png" alt="img"></a>                         
+                                                </div>
+                                                <div class="product-data">
+                                                    <div class="price">123 EGP</div>
+                                                    <div class="product-name">
+                                                        <a href="#"><h4>اسم المنتج</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-6 col-md-4 col-lg-3">
+                                            <div class="product-card-small">
+                                                <div class="product-img-small">
+                                                    <a href="#"><img src="../images/img5.png" alt="img"></a>                         
+                                                </div>
+                                                <div class="product-data">
+                                                    <div class="price">123 EGP</div>
+                                                    <div class="product-name">
+                                                        <a href="#"><h4>اسم المنتج</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-6 col-md-4 col-lg-3">
+                                            <div class="product-card-small">
+                                                <div class="product-img-small">
+                                                    <a href="#"><img src="../images/img5.png" alt="img"></a>                         
+                                                </div>
+                                                <div class="product-data">
+                                                    <div class="price">123 EGP</div>
+                                                    <div class="product-name">
+                                                        <a href="#"><h4>اسم المنتج</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-6 col-md-4 col-lg-3">
+                                            <div class="product-card-small">
+                                                <div class="product-img-small">
+                                                    <a href="#"><img src="../images/img5.png" alt="img"></a>                         
+                                                </div>
+                                                <div class="product-data">
+                                                    <div class="price">123 EGP</div>
+                                                    <div class="product-name">
+                                                        <a href="#"><h4>اسم المنتج</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-6 col-md-4 col-lg-3">
+                                            <div class="product-card-small">
+                                                <div class="product-img-small">
+                                                    <a href="#"><img src="../images/img5.png" alt="img"></a>                         
+                                                </div>
+                                                <div class="product-data">
+                                                    <div class="price">123 EGP</div>
+                                                    <div class="product-name">
+                                                        <a href="#"><h4>اسم المنتج</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-6 col-md-4 col-lg-3">
+                                            <div class="product-card-small">
+                                                <div class="product-img-small">
+                                                    <a href="#"><img src="../images/img5.png" alt="img"></a>                         
+                                                </div>
+                                                <div class="product-data">
+                                                    <div class="price">123 EGP</div>
+                                                    <div class="product-name">
+                                                        <a href="#"><h4>اسم المنتج</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-6 col-md-4 col-lg-3">
+                                            <div class="product-card-small">
+                                                <div class="product-img-small">
+                                                    <a href="#"><img src="../images/img5.png" alt="img"></a>                         
+                                                </div>
+                                                <div class="product-data">
+                                                    <div class="price">123 EGP</div>
+                                                    <div class="product-name">
+                                                        <a href="#"><h4>اسم المنتج</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-6 col-md-4 col-lg-3">
+                                            <div class="product-card-small">
+                                                <div class="product-img-small">
+                                                    <a href="#"><img src="../images/img5.png" alt="img"></a>                         
+                                                </div>
+                                                <div class="product-data">
+                                                    <div class="price">123 EGP</div>
+                                                    <div class="product-name">
+                                                        <a href="#"><h4>اسم المنتج</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="col-6 col-md-4 col-lg-3">
+                                            <div class="product-card-small">
+                                                <div class="product-img-small">
+                                                    <a href="#"><img src="../images/img5.png" alt="img"></a>                         
+                                                </div>
+                                                <div class="product-data">
+                                                    <div class="price">123 EGP</div>
+                                                    <div class="product-name">
+                                                        <a href="#"><h4>اسم المنتج</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                                <div class="swiper-slide">Slide 4</div>
+                                <div class="swiper-slide">Slide 5</div>
+                                <div class="swiper-slide">Slide 6</div>
+                                <div class="swiper-slide">Slide 7</div>
+                                <div class="swiper-slide">Slide 8</div>
+                                <div class="swiper-slide">Slide 9</div>
+                                <div class="swiper-slide">Slide 10</div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="row go-to-first-slide-row">
+                            <button class="btn btn-primary go-to-first-slide-btn disabled">اذهب الى الصفحة الاولى</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="../index.html" class="brand">
+                        <img src="../images/footer-logo.png" alt="logo png">
+                        <h2>اختارنالكو</h2>
+                    </a>
+                    <div class="social-media-buttons">
+                        <a href="#" target="blank"><i class="fab fa-whatsapp"></i><span class="sr-only sr-only-focusable">what's app</span></a>
+                        <a href="#" target="blanck"><i class="fab fa-twitter"></i><span class="sr-only sr-only-focusable">twitter</span></a>
+                        <a href="#" target="blanck"><i class="fab fa-facebook-f"></i><span class="sr-only sr-only-focusable">facebook</span></a>
+                        <a href="#" target="blanck"><i class="fab fa-instagram"></i><span class="sr-only sr-only-focusable">instagram</span></a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-list-title"><h3>عنوان</h3></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-list-title"><h3>عنوان</h3></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-list-title"><h3>عنوان</h3></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-list-title"><h3>عنوان</h3></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row copy-right">
+               <p> جميع الحقوق محفوظة الى  &copy; اختارنالكو</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- fixed message form -->
+    <div class="fixed-msg">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-msg">
+            <i class="fas fa-envelope"></i><span class="sr-only sr-only-focusable">ارسل لنا رسالة</span>
+        </button>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal-msg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">لديك اى استفسار؟</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" id="quick-msg-form">
+                        <div class="form-row">
+                            <label for="client-name-msg">الاسم</label>
+                            <input type="text" name="name" id="client-name-msg" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="client-number-msg">الرقم</label>
+                            <input type="text" name="number" id="client-number-msg" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="client-message-msg">الرسالة</label>
+                            <textarea cols="20" rows="6" name="message-form-text-area" id="client-message-msg" class="quick-msg-text-area" required></textarea>
+                        </div>
+
+                        <input type="submit" value="Submit" class="hide-me">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
+                    <button type="button" class="btn btn-primary" id="quick-msg-form-submit-form">إرسال</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--scripts-->
+    <!--jquery-->
+    <script src="../scripts/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!--bootstrap-->
+    <script src="../scripts/bootstrap.min.js"></script>
+    <!--swiper-->
+    <script src="../scripts/swiper-bundle.min.js"></script>
+    <!--main script file-->
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أخترنالكو</title>
+    <link rel="icon" href="../images/title-logo.png" type="image/x-icon">
+    <!--loader css file-->
+    <link rel="stylesheet" href="../styles/loader.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="../styles/swiper-bundle.min.css">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <!--fontawsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!--main style sheet-->
+    <link rel="stylesheet" href="../styles/main.css">
+    <!--templates style sheet-->
+    <link rel="stylesheet" href="../styles/templates.css">
+</head>
+<body class="non-over-flow">
+    <div id="loader-background">
+        <div class="loader">Loading...</div>
+    </div>
+
+    <div id="navbars">
+        <div id="small-screen-nav">
+            <a href="#" class="brand"><span>أخترنالكو</span></a>
+            <nav class="nav-2">
+                <div class="containerer">
+                    <a href="#" class="brand"><span>أخترنالكو</span></a>
+
+                    <ul class="first-ul">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">الصفحة الرئيسية</a>
+                        </li>
+
+                        <!-- there's sub menu here -->
+                        <li class="nav-item sub-menu">
+                            <a href="#" class="nav-link sub-menu-label"> <span>متعدد 1</span> <i class="fas fa-chevron-left"></i></a>
+                            <ul>
+                                <li class="back"><span></span><i class="fas fa-arrow-right"></i></li>
+                                <li class="label"></li>
+                                <li><a href="#" class="nav-link"> مستوى ثانى فردى </a></li>
+                                <li><a href="#" class="nav-link"> مستوى ثانى فردى </a></li>
+                                <li><a href="#" class="nav-link"> مستوى ثانى فردى </a></li>
+                            </ul>
+                        </li>
+
+                        <!-- there's sub menu here -->
+                        <li class="nav-item sub-menu">
+                            <a href="#" class="nav-link sub-menu-label"> <span>متعدد 2</span> <i class="fas fa-chevron-left"></i></a>
+                            <ul>
+                                <li class="back"><span></span><i class="fas fa-arrow-right"></i></li>
+                                <li class="label"></li>
+
+                                <li><a href="#" class="nav-link">فردى</a></li>
+                                <!-- there's sub menu here -->
+                                <li class="nav-item sub-menu">
+                                    <a href="#" class="nav-link sub-menu-label"> <span>متعدد 3</span> <i class="fas fa-chevron-left"></i></a>
+                                    <ul>
+                                        <li class="back"><span></span><i class="fas fa-arrow-right"></i></li>
+                                        <li class="label"></li>
+                                        <li><a href="#" class="nav-link"> مستوى ثالث فردى </a></li>
+                                        <li><a href="#" class="nav-link"> مستوى ثالث فردى </a></li>
+                                        <li><a href="#" class="nav-link"> مستوى ثالث فردى </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="nav-link">فردى</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./seller-profile.html" class="nav-link ">صفحة البائع</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./search-results.html" class="nav-link ">نتائج البحث</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./product-page.html" class="nav-link ">صفحة المنتج</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./order-number-request.html" class="nav-link ">الاستعلام عن الطلب</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./order-number-show.html" class="nav-link ">نتيجة الاستعلام عن الطلب</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./category-page.html" class="nav-link ">فئة المنتجات</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./contact-us.html" class="nav-link ">اتصل بنا</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="./about-us.html" class="nav-link ">من نحن</a>
+                        </li>
+                    </ul>  
+                </div>
+            </nav>
+            <!--search form-->
+            <div class="for-styling"></div>
+            <form method="GET" class="nav-search-form">
+                <label for="search" class="sr-only sr-only-focusable">search input</label>
+                <input type="text" placeholder="ما الذى تريد البحث عنه؟" name="search" id="search">
+                <button type="submit"><i class="fa fa-search"></i> <span class="sr-only sr-only-focusable">اضغط للبحث</span> </button>
+            </form>
+
+            <span class="open-nav-btn"><i class="fa fa-search"></i></span>
+            <!--hamburger menu-->
+            <div class="menu-btn"  role="button">
+                <div class="menu-btn_burger"></div>
+            </div>
+        </div>
+        <div class="page-overlay"></div>
+    </div>
+
+    <header id="templates-header">
+        <div class="header-logo">
+            <h1>اختارنالكو</h1>
+        </div>
+    </header>
+
+    <main id="order-number-show">
+        <h2>متابعة طلبك</h2>
+        <div class="container-lg">
+
+            <h3>حالة الطلب رقم <span class="order-number-span">424</span></h3>
+            <p class="order-state">
+                <span class="checking-order d-none">طلبك قيد المراجعة</span>
+                <span class="delivering-order">طلبك قيد التوصيل</span>
+                <span class="order-delivered d-none">تم توصيل طلبك بنجاح</span>
+            </p>
+            
+            <div class="row">
+                <div class="col-md-6">    
+                    <div class="product-img">
+                        <img src="../images/project-1-images/img1.png" alt="image 1">
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <table id="request-information">
+                        <thead>
+                            <tr>
+                                <th colspan="2">
+                                    مواصفات الطلب
+                                </th>
+                            </tr>
+                            
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>اسم العميل</th>
+                                <td id="client-name">فلان</td>
+                            </tr>
+
+                            <tr>
+                                <th>اسم المنتج</th>
+                                <td id="item-name">تيشرت رجالى بكم</td>
+                            </tr>
+
+                            <tr>
+                                <th>الكمية</th>
+                                <td id="item-quantity">2</td>
+                            </tr>
+
+                            <tr>
+                                <th>السعر</th>
+                                <td id="item-price">246 EGP</td>
+                            </tr>
+
+                            <tr>
+                                <th>تاريخ الطلب</th>
+                                <td id="date-of-request">24/07/2020</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <th colspan="2">
+                                    <a href="#" class="load-more-a">الذهاب لصفحة المنتج</a>
+                                </th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="../index.html" class="brand">
+                        <img src="../images/footer-logo.png" alt="logo png">
+                        <h2>اختارنالكو</h2>
+                    </a>
+                    <div class="social-media-buttons">
+                        <a href="#" target="blank"><i class="fab fa-whatsapp"></i><span class="sr-only sr-only-focusable">what's app</span></a>
+                        <a href="#" target="blanck"><i class="fab fa-twitter"></i><span class="sr-only sr-only-focusable">twitter</span></a>
+                        <a href="#" target="blanck"><i class="fab fa-facebook-f"></i><span class="sr-only sr-only-focusable">facebook</span></a>
+                        <a href="#" target="blanck"><i class="fab fa-instagram"></i><span class="sr-only sr-only-focusable">instagram</span></a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-list-title"><h3>عنوان</h3></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-list-title"><h3>عنوان</h3></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-list-title"><h3>عنوان</h3></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-list-title"><h3>عنوان</h3></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                                <li class="footer-list"><a href="#">رابط</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row copy-right">
+               <p> جميع الحقوق محفوظة الى  &copy; اختارنالكو</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- fixed message form -->
+    <div class="fixed-msg">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal-msg">
+            <i class="fas fa-envelope"></i><span class="sr-only sr-only-focusable">ارسل لنا رسالة</span>
+        </button>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal-msg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">لديك اى استفسار؟</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" id="quick-msg-form">
+                        <div class="form-row">
+                            <label for="client-name-msg">الاسم</label>
+                            <input type="text" name="name" id="client-name-msg" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="client-number-msg">الرقم</label>
+                            <input type="text" name="number" id="client-number-msg" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="client-message-msg">الرسالة</label>
+                            <textarea cols="20" rows="6" name="message-form-text-area" id="client-message-msg" class="quick-msg-text-area" required></textarea>
+                        </div>
+
+                        <input type="submit" value="Submit" class="hide-me">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
+                    <button type="button" class="btn btn-primary" id="quick-msg-form-submit-form">إرسال</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--scripts-->
+    <!--jquery-->
+    <script src="../scripts/jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!--bootstrap-->
+    <script src="../scripts/bootstrap.min.js"></script>
+    <!--swiper-->
+    <script src="../scripts/swiper-bundle.min.js"></script>
+    <!--main script file-->
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
